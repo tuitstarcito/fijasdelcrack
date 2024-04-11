@@ -1,0 +1,156 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  color: #212529;
+  background-color: #e9ecef;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+.header {
+  padding: 1rem;
+  background-color: #fff;
+}
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.main {
+  text-align: center;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.gray {
+  color: #6c757d;
+  /* padding-top: 1rem; */
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.button--blue {
+  background-color: #007bff;
+  padding: 0.5rem;
+}
+
+.footer {
+  margin-top: 1rem;
+}
+
+.footer__store {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.badge {
+  display: block;
+  width: 120px;
+}
+
+.google {
+  width: 140px;
+}
+
+.nmt {
+  margin-top: 0 !important;
+}
+
+.m-1 {
+  margin-bottom: 0.5rem;
+}
+
+.df {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.button__logo {
+  width: 20px;
+}
+
+.copyright {
+  margin-top: auto;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  color: #6c757d;
+  font-size: 0.8rem;
+}
